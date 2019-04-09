@@ -79,5 +79,7 @@
 		<module>cloud-exchange-service</module>
 		<module>cloud-spring-cloud-config-server</module>
 		<module>cloud-limits-service</module>
+		<module>cloud-currency-conversion-service</module>
+		<module>cloud-netflix-eureka-naming-server</module>
 	</modules>
 </project>
