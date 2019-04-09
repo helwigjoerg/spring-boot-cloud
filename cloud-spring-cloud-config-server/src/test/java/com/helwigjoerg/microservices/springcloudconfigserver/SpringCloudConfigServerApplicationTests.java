@@ -1,4 +1,4 @@
-package com.in28minutes.microservices.springcloudconfigserver;
+package com.helwigjoerg.microservices.springcloudconfigserver;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

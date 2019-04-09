@@ -2,3 +2,4 @@
 /cloud-exchange-service/.settings
 /cloud-spring-cloud-config-server/target
 /cloud-spring-cloud-config-server/.settings
+/cloud-limits-service/target
