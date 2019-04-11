@@ -42,4 +42,9 @@ Spring Boot and following technologies:
 
 -Dserver.port=8001
 
+## Build
+
+*  mvn clean install -Dmaven.test.skip=true 
+
+
 
