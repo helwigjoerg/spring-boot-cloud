@@ -45,6 +45,25 @@ Spring Boot and following technologies:
 ## Build
 
 *  mvn clean install -Dmaven.test.skip=true 
+*  mvn spring-boot:run (starting with eureka)
+
+## Installing Rabbit MQ
+
+Windows
+* https://www.rabbitmq.com/install-windows.html
+* https://www.rabbitmq.com/which-erlang.html
+* http://www.erlang.org/downloads
+* Video - https://www.youtube.com/watch?v=gKzKUmtOwR4
+
+Mac
+* https://www.rabbitmq.com/install-homebrew.html
+
+
+## Zipkin 
+
+* https://zipkin.io/pages/quickstart.html
+* SET RABBIT_URI=amqp://localhost
+* java -jar zipkin.jar
 
 
 
