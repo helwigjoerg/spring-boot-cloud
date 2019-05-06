@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.helwig.microservices.currencyexchangeservice.exception.ExchangeValueNotFoundException;
+
 @RestController
 public class CurrencyExchangeController {
 	
@@ -25,6 +27,10 @@ public class CurrencyExchangeController {
 		
 		ExchangeValue exchangeValue = 
 				repository.findByFromAndTo(from, to);
+		
+		if (exchangeValue == null) {
+			throw new ExchangeValueNotFoundException(from + "  "  + to + " not fond");
+		}
 		
 		exchangeValue.setPort(
 				Integer.parseInt(environment.getProperty("local.server.port")));
