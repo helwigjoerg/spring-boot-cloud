@@ -1,5 +1,7 @@
 package com.helwig.microservices.currencyexchangeservice;
 
+import javax.validation.Valid;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +25,7 @@ public class CurrencyExchangeController {
 	
 	@GetMapping("/currency-exchange/from/{from}/to/{to}")
 	public ExchangeValue retrieveExchangeValue
-		(@PathVariable String from, @PathVariable String to){
+		(@Valid @PathVariable String from, @PathVariable String to){
 		
 		ExchangeValue exchangeValue = 
 				repository.findByFromAndTo(from, to);
